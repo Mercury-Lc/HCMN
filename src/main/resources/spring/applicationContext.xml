@@ -57,10 +57,10 @@
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* cn.itcast.service..*.*(..))" />
+			pointcut="execution(* ol.service..*.*(..))" />
 	</aop:config>
 
 	<!-- 配置包扫描器，扫描所有带@Service注解的类 -->
-	<context:component-scan base-package="cn.itcast.service" />
+	<context:component-scan base-package="ol.service" />
 	<import resource="classpath:spring/mongodbspring.xml"/>
 </beans>

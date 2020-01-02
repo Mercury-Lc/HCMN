@@ -14,12 +14,11 @@
      ">
 
     <!-- 加载mongodb的属性配置文件 -->  
-    <context:property-placeholder location="classpath:properties/mongodb.properties" ignore-unresolvable="true">
-    </context:property-placeholder>
+    <context:property-placeholder location="classpath:properties/mongodb.properties" ignore-unresolvable="true"/>
     <!--1.开启注解-->
-    <context:annotation-config></context:annotation-config>
+    <context:annotation-config/>
      <!--2.注解激活器 -->
-    <context:component-scan base-package="cn.itcast.*"/>
+    <context:component-scan base-package="ol.*"/>
     <!--3.服务器连接信息-->
     <!--连接MongoDB服务器-->
     <mongo:mongo-client id="mongo" host="${mongo.host}" port="${mongo.port}" >
